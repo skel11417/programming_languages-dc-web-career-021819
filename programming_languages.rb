@@ -7,12 +7,8 @@ def reformat_languages(languages)
         new_hash[lang_name] = {}
       end
       new_hash[lang_name][:type] = type_hash[:type]
-      if new_hash[lang_name][:style].nil?
-        new_hash[lang_name][:style] = [style]
-      else
-        
-        new_hash[lang_name][:style] << style
-      end
+      new_hash[lang_name][:style] = [style]
+      new_hash[lang_name][:style] << style
     end
   end
   new_hash
