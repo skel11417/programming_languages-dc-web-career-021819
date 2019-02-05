@@ -7,7 +7,9 @@ def reformat_languages(languages)
       # binding.pry
       new_hash[lang_name][:type] = type_hash[:type]
       if new_hash[lang_name][:style].exists?
-        new_hash[lang_name][:style] << [style]
+        new_hash[lang_name][:style] << style
+      else
+        new_hash[lang_name][:style] == [style]
     end
   end
   binding.pry
