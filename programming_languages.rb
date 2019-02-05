@@ -5,6 +5,7 @@ def reformat_languages(languages)
     langs.each do | lang_name, type_hash |
       if new_hash[lang_name].nil?
         new_hash[lang_name] = {}
+      end
 
       new_hash[lang_name][:type] = type_hash[:type]
       binding.pry
